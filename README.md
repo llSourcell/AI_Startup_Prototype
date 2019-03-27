@@ -84,7 +84,7 @@ I did what most people recommend for the application's structure. Basically, eve
 
 The goal is to keep most of the application's configuration in a single file called `config.py`. I added a `config_dev.py` and a `config_prod.py` who inherit from `config_common.py`. The trick is to symlink either of these to `config.py`. This is done in by running `make dev` or `make prod`.
 
-I have included a working Gmail account to confirm user email addresses and reset user passwords, although in production you should't include the file if you push to GitHub because people can see it. The same goes for API keys, you should keep them secret. You can read more about secret configuration files [here](https://exploreflask.com/configuration.html).
+I have included a working Gmail account to confirm user email addresses and reset user passwords, although in production you shouldn't include the file if you push to GitHub because people can see it. The same goes for API keys, you should keep them secret. You can read more about secret configuration files [here](https://exploreflask.com/configuration.html).
 
 Read [this](http://flask.pocoo.org/docs/0.10/config/) for information on the possible configuration options.
 
